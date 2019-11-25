@@ -10,6 +10,7 @@ import android.view.Surface
 import android.view.TextureView
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.*
@@ -115,6 +116,11 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
                         Log.d("CameraXApp", msg)
                         viewFinder.post {
                             Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
+                            val textView: TextView = findViewById(R.id.text_log)
+                            textView.text = msg
+
+
+
                         }
                     }
                 })
