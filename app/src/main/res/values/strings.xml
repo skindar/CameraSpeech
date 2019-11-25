@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CameraSpeech</string>
+    <string name="btn_capture">SimpleCupture</string>
 </resources>
